@@ -1,3 +1,17 @@
+Based on the original Magenta Lo-fi player, but with (many) added functionalities.
+Changes include; more instruments, pitch, detune, 3D environment, more drum sounds, while the project runs you can create custom music for melodies/chords/bass/drums.
+
+To start the project you have to have NODE.JS on your computer. Typ node SIMPLESERVER.JS in commmand prompt (Windows) to launch the project on port 9077. Enjoy! 
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The might fine original project can be accessed here: https://github.com/magenta/lofi-player
+Info about version 1.3 (original project):
+
+
+
 # Lo-Fi Player
 
 Welcome to our “Lo-Fi Player” room! By interacting with elements in the room, you can build your own custom music stream. Or if you prefer, just relax, listen, and enjoy the view from the window. The experience is powered by machine learning models from [magenta.js](https://github.com/magenta/magenta-js).
