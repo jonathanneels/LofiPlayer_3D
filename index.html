@@ -698,6 +698,7 @@
 var ground;
 	var is3DActive=false;
 	var isProjectActive=true;
+			var clickCount = 0;
 
         var canvas = document.getElementById("renderCanvas");
 var camera=null;
@@ -855,7 +856,6 @@ if (!String.prototype.includes) {//REF:https://stackoverflow.com/questions/17899
 							                  //  camera.setTarget(master);
 
 			
-			var clickCount = 0;
 
              scene.onPointerDown = function(evt, pickInfo) {
                 if(pickInfo.hit) {
