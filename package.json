@@ -1,0 +1,22 @@
+{
+  "name": "lofiplayer3d",
+  "version": "0.2.0",
+  "description": "lofiplayer3d - Based on the original Magenta Lo-fi player, but with (many) added functionalities.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index_HEROKU.js"
+  },
+  "engines": {
+    "node": "14.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathanneels/LofiPlayer_3D"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+  "author": "Jonathan F.M. Neels",
+  "license": "MIT"
+}
