@@ -8,7 +8,7 @@ To start the project you have to have NODE.JS on your computer. Typ node SIMPLES
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-The might fine original project can be accessed here: https://github.com/magenta/lofi-player
+The superb original project can be accessed here: https://github.com/magenta/lofi-player
 Info about version 1.3 (original project):
 
 
