@@ -1,0 +1,10 @@
+http://www.zeldacentral.com/midi.shtml
+
+http://www.classiczelda.com/music/midi/zelda1/index.php
+
+http://www.classiczelda.com/music/midi/zelda1/index.php
+
+https://www.khinsider.com/midi/n64/zelda-ocarina-of-time
+
+Note:
+Not all midis and/or melodies work (suddenly a time related thing in converting to tone js formats).
