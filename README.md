@@ -4,7 +4,7 @@ Also possible now is when the project runs you can create custom music for melod
 
 To start the project you have to have 'node js' on your computer. Typ node SIMPLESERVER.JS in commmand prompt (Windows) to launch the project on port 9077. Enjoy! 
 
-
+Play online: https://lofiplayer3d.herokuapp.com/
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
