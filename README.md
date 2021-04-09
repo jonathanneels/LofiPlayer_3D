@@ -1,5 +1,6 @@
 Based on the original Magenta Lo-fi player, but with (many) added functionalities.
-Changes include; more instruments, pitch, detune, 3D environment, more drum sounds, while the project runs you can create custom music for melodies/chords/bass/drums.
+Changes include; more instruments, pitch, detune, 3D environment, more drum sounds.
+Also possible now is when the project runs you can create custom music for melodies/chords/bass/drums.
 
 To start the project you have to have NODE.JS on your computer. Typ node SIMPLESERVER.JS in commmand prompt (Windows) to launch the project on port 9077. Enjoy! 
 
