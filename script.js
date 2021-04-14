@@ -572,7 +572,17 @@ function initCustomSounds() {
 	var splittedcustomNotes= txtaCustomMelody.value.split(",");
 	for (var i = 0; i < splittedcustomNotes.length; i++) {// fmi: no # notes with default config. Set isAllNotes to true to accept #'s.
 		
-         notes.push( {     "duration":1  ,  "durationTicks": 1*100,    "midi":  Tone.Frequency(splittedcustomNotes[i].trim()).toMidi(),	    "pitch": Tone.Frequency(splittedcustomNotes[i].trim()).toMidi(),    "name":splittedcustomNotes[i].trim() ,   "ticks": ((i+1) * 100),    "time": i+1, "velocity": 0.5905511811023622});
+		  const ticksPerBeat = TICKS_PER_BAR / BEATS_PER_BAR;
+  const ticksPerFourthNote = ticksPerBeat / 4;
+
+		  const duration= 1; //1 sec
+		  const ticks=((i+1) * 100); 
+ 
+		//FMI: originally time was "time": i+1
+		
+         notes.push( {     "duration":duration  ,  "durationTicks": duration*100,    "midi":  Tone.Frequency(splittedcustomNotes[i].trim()).toMidi(),	    "pitch": Tone.Frequency(splittedcustomNotes[i].trim()).toMidi(),    "name":splittedcustomNotes[i].trim() ,   "ticks": ticks,
+		 "time": `${Math.floor(ticks / TICKS_PER_BAR)}:${        Math.floor(ticks / ticksPerBeat) % BEATS_PER_BAR      }:${(ticks / ticksPerFourthNote) % 4}`, 
+		 "velocity": 0.5905511811023622});
 }
   state.melody.customNotes=txtaCustomMelody.value;
 state.melody.customMelody=true;

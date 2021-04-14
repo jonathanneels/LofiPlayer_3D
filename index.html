@@ -7,7 +7,7 @@
     <meta property="og:description" content="Interactive lofi beat player." />
     <meta
       property="og:image"
-      content="https://magenta.github.io/lofi-player/assets/screenshots/screenshot_v.1.0.png"
+      content="\assets\screenshots\screenshot_v.0.3.1.png"
     />
     <meta property="og:url" content="https://magenta.github.io/lofi-player/" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -25,8 +25,8 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
+	     <link rel="stylesheet" href="./third_party/NES.css" /> 
+     <link rel="stylesheet" href="./style.css" />
 
     <!-- favicon -->
     <link
@@ -37,13 +37,13 @@
     />
 
     <!-- import the webpage's javascript file -->
-    <script src="https://unpkg.com/tone@13.8.25/build/Tone"></script>
-    <script src="https://unpkg.com/@tonejs/midi@2.0.26/build/Midi"></script>
+    <script src="./third_party/Tonejs.js"></script>
+    <script src="./third_party/Midi.js"></script>
     <script src="./third_party/Tonejs-Instruments.js"></script>
     <script src="./script.js" defer></script>
 	
-	   <script src="https://preview.babylonjs.com/babylon.js"></script>
-        <script src="https://preview.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+	   <script src="./third_party/babylon.js"></script>
+        <script src="./third_party/babylon.inspector.bundle.js"></script>
 
         <style>
             html, body {
@@ -641,7 +641,7 @@
           <p id="shareButtonHint">link copied to clipboard</p>
           <input type="text" value="https://magenta.github.io/lofi-player/" id="hiddenUrlInput" />
 					 <span id="sRecord"  > 
-<input id = "btnLaunchRecord" type="button"   style="border-radius: 80%;background-color:red;margin-left:40%;" value="O"/>
+<input id = "btnLaunchRecord" type="button"   style="border-radius: 80%;background-color:red;margin-left:40%;height:30px;width:30px;" value=""/>
 
  </span>
         </div>
