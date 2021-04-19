@@ -9,6 +9,7 @@ Play online: https://lofiplayer3d.herokuapp.com/
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 The superb original project can be accessed here: https://github.com/magenta/lofi-player
+
 Info about version 1.3 (original project):
 
 
