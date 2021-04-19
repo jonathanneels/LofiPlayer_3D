@@ -72,6 +72,8 @@ const customBeatInstrumentSelect1 = document.getElementById('drum-custominstr1-s
 const customBeatInstrumentSelect2 = document.getElementById('drum-custominstr2-select');
 const customBeatInstrumentSelect3 = document.getElementById('drum-custominstr3-select');
 
+const themeSelector = document.getElementById('theme-select');
+
 
 const masterToneSlider = document.getElementById('master-tone-slider');
 const masterVolumeSlider = document.getElementById('master-volume-slider');
@@ -2305,6 +2307,11 @@ txtaCustomBass.innerText  =bassNotes;
     setTimeout(() => {
       shareButtonHint.style.display = 'none';
     }, 2000);
+  });
+
+  themeSelector.addEventListener('change', (e) => {
+ themeFolder=themeSelector.value;
+loadMidiFiles();
   });
 
   window.addEventListener('resize', () => {

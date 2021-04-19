@@ -95,7 +95,8 @@
         <img src="./assets/rooom-0.png" alt="room" id="background-image" />
         <canvas id="main-canvas"> </canvas>
         <div id="canvas-overlay">
-          <h1 id="title">Lo-Fi Player</h1>
+          <h1 id="title" >Lo-Fi Player</h1>
+
           <button id="start-button" class="nes-btn disabled" onclick="btn3D.style.display = 'block';isProjectActive=true;">loading...</button>
         </div>
         <div id="melody-panel-div">
@@ -104,6 +105,16 @@
               <h3 class="title">Master</h3>
 
               <div class="panel-control-div">
+			  					<div>
+                  <label>Theme</label>
+                <select id="theme-select" >
+                  <option value="first_theme" >default</option>
+                  <option value="experiment_a">experiment A</option>
+                  <option value="ZeldaThemes1" selected>Zelda</option>
+                  <option value="CymaticsEternityTapeLoops">Cymatics </option>
+                 </select>
+                </div> 
+
                 <div>
                   <label>bpm</label>
                   <input
@@ -176,7 +187,6 @@
                     value="0"
                   />
                 </div>
-
                 <div>
                   <label
                     >auto random <br />
@@ -187,6 +197,7 @@
                     <span></span>
                   </label>
                 </div>
+
               </div>
             </div>
             <div class="panel" id="interpolation-div">
