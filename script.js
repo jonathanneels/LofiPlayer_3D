@@ -122,8 +122,9 @@ const LESS_FILTER = 'less_filter';
 // TODO: prevent loading models
 const LOAD_ML_MODELS = true;
 const LOAD_EVENTS_COUNTS_THRESHOLD = LOAD_ML_MODELS ? 8 : 6;
+var melodyLengthMultiplier= 1; // custom added 21/04/2021
 const TOTAL_BAR_COUNTS = 8;
-const TICKS_PER_BAR = 384;
+const TICKS_PER_BAR = 384*melodyLengthMultiplier;
 const BEATS_PER_BAR = 4; // higher is 'slower' sound, lower is 'faster' sound.
 const TOTAL_TICKS = TOTAL_BAR_COUNTS * TICKS_PER_BAR;
 const MODEL_BAR_COUNT = 2;
@@ -3176,7 +3177,8 @@ function urlParamsToState() {
 changeMasterAutoBreak(master.autoBreak);
     }
     if (ss.drum) {
-		changeDrumCustomBeats(ss.drum);
+		changeDrumCustomBeats(ss.drum); 
+		    toggleDrum( ss.drum.mute);// added (bugfix, error else? 21/04/2021)
 
 		}
 
