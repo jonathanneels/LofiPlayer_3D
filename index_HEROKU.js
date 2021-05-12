@@ -54,6 +54,7 @@ const server = http.createServer((req, res) => {
 		req.url = req.url.replace(/(.*?) ?fbclid.*/i, "$1").trim(); // handling fb click id
 					if(req.url.slice(-1) =="?"){
 			req.url =req.url.substring(0, req.url.length - 1).trim();
+			}
 
 
   if (req.url === '/') {//REF: https://stackoverflow.com/questions/4720343/loading-basic-html-in-node-js
